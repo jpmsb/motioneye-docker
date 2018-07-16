@@ -7,19 +7,19 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
     apt -y -q upgrade && \
     apt -y -q install wget nano make python-pip python-dev python-setuptools curl libssl-dev libcurl4-openssl-dev libjpeg-dev libz-dev && \
     \
-    wget 10.10.10.1/x264.tar.gz && \
+    wget 191.36.8.33/x264.tar.gz && \
     tar -xvf x264.tar.gz && \
     make install -C x264/ && \
     ldconfig && \
     rm -r x264* && \
     \
-    wget 10.10.10.1/ffmpeg-3.4.tar.gz && \
+    wget 191.36.8.33/ffmpeg-3.4.tar.gz && \
     tar -xvf ffmpeg-3.4.tar.gz && \
     make install -C FFmpeg-release-3.4/ && \
     ldconfig && \
     rm -r ffmpeg-3.4.tar.gz FFmpeg-release-3.4 && \
     \
-    wget 10.10.10.1/motion-4.1.tar.gz && \
+    wget 191.36.8.33/motion-4.1.tar.gz && \
     tar -xvf motion-4.1.tar.gz && \
     make install -C motion-4.1 && \
     ldconfig && \
